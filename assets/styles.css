@@ -112,6 +112,7 @@ nav {
   color: #f2f2f2;
   font-family: 'Sunflower Medium', sans-serif;
   transition: all .2s;
+  border: 2px solid #ddd;
 }
 
 .btn:hover {
@@ -123,7 +124,6 @@ nav {
   padding: 8px 28px;
   font-size: 1.5rem;
   margin-top: 20px;
-  border: 2px solid #ddd;
 }
 
 footer {
@@ -208,8 +208,8 @@ footer h3 {
   gap: 10px;
   color: #f2f2f2;
   position: absolute;
+  top: 20%;
   left: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -298,7 +298,72 @@ footer h3 {
   border: 2px solid #353535;
 }
 
+.card {
+  width: 90%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+  color: #f2f2f2;
+}
 
+.card-title {
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+}
+
+.card-title.cars {
+  font-size: 6.2rem;
+}
+
+.card-info {
+  font-family: 'Sunflower', sans-serif;
+  width: 80%;
+}
+
+.snap {
+  scroll-snap-type: y mandatory;
+  min-width: auto;
+  width: 100%;
+  max-width: 560px;
+  min-height: auto;
+  height: 100%;
+  max-height: 350px;
+  overflow-y: scroll;
+  border-radius: 5px;
+}
+
+/* width */
+.snap::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+.snap::-webkit-scrollbar-track {
+  background: #353535;
+}
+/* Handle */
+.snap::-webkit-scrollbar-thumb {
+  background: #1b1b1b;
+}
+/* Handle on hover */
+.snap::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+.card-img {
+  min-width: auto;
+  width: 100%;
+  max-width: 560px;
+  border-radius: 5px;
+  scroll-snap-align: center;
+}
+
+.register-btn {
+  font-size: 1.4rem;
+  padding: 8px 20px;
+  margin: 30px 0;
+}
 
 
 @media only screen and (max-width: 1024px) {
@@ -362,6 +427,7 @@ footer h3 {
   }
   .modal-title::before {
     top: 0;
+    background-position: center;
   }
   .modal-close a img {
     width: 36px;
@@ -369,5 +435,8 @@ footer h3 {
   .modal-form {
     display: flex;
     flex-direction: column;
+  }
+  .card {
+    grid-template-columns: 1fr;
   }
 }
