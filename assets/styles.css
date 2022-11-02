@@ -296,6 +296,7 @@ footer h3 {
   font-size: 1.4rem;
   padding: 20px 0;
   border: 2px solid #353535;
+  margin-top: 20px;
 }
 
 .card {
@@ -357,6 +358,7 @@ footer h3 {
   max-width: 560px;
   border-radius: 5px;
   scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 .register-btn {
@@ -374,6 +376,9 @@ footer h3 {
   .modal-title {
     padding: 30px 20px;
     text-align: center;
+  }
+  .modal-data {
+    padding: 30px 15px;
   }
   .card-title.cars {
     font-size: 5rem;
