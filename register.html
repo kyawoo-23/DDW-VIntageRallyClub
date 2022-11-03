@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="icon" href="./assets/img/logo.png">
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="./index.html">
+      <img class="nav-logo" src="./assets/img/logo.png" alt="logo" />
+    </a>
+    <div class="nav-items">
+      <a class="nav-item" href="./index.html">Home</a>
+      <a class="nav-item" href="./about.html">About</a>
+      <a class="nav-item" href="./drivers.html">Drivers</a>
+      <a class="nav-item active" href="./register.html">Register</a>
+      <a class="nav-item nowrap" href="./q&a.html">Q & A</a>
+      <a class="nav-item" href="./contact.html">Contact</a>
+    </div>
+  </nav>
+  <div class="hero">
+    <img src="./assets/img/register/hero.jpg" alt="hero img" />
+    <div class="overlay">
+      <div class="hero-title">
+        <h1>Register Online</h1>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="center-title">Stages</h1>
+
+  <div class="stages">
+    <div class="stage">
+      <div class="stage-info">
+        <h1 class="stage-title">Stage 1</h1>
+        <small class="stage-date">Dec 13 ~ Dec 28</small>
+      </div>
+      <div class="countries">
+        <img title="Japan" class="country" src="./assets/img/countries/japan.png" alt="japan" />
+        <img title="Brazil" class="country" src="./assets/img/countries/brazil.png" alt="brazil" />
+      </div>
+      <img class="waving-flag" src="./assets/img/register/waving race flag.gif" />
+    </div>
+
+    <div class="stage">
+      <div class="stage-info">
+        <h1 class="stage-title">Stage 2</h1>
+        <small class="stage-date">Jan 10 ~ Jan 26</small>
+      </div>
+      <div class="countries">
+        <img title="South Korea" class="country" src="./assets/img/countries/south korea.jpg" alt="south korea" />
+        <img title="France" class="country" src="./assets/img/countries/france.png" alt="france" />
+      </div>
+      <img class="waving-flag" src="./assets/img/register/waving race flag.gif" />
+    </div>
+
+    <div class="stage">
+      <div class="stage-info">
+        <h1 class="stage-title">Stage 3</h1>
+        <small class="stage-date">Feb 25 ~ Mar 18</small>
+      </div>
+      <div class="countries">
+        <img title="United Kingdom" class="country" src="./assets/img/countries/uk.png" alt="uk" />
+      </div>
+      <img class="waving-flag" src="./assets/img/register/waving race flag.gif" />
+    </div>
+  </div>
+
+  <h1 class="center-title">Registeration form</h1>
+
+  <div class="join-form">
+    <div class="join-left">
+      <img class="join-icon" src="./assets/img/register/car.jpg" alt="car icon" />
+      <h3>Registeration Form</h3>
+      <p>It should take about 2-3mins filling the form.</p>
+      <img class="join-arrow" src="./assets/icons/arrow.svg" alt="form-arrow" />
+    </div>
+    <form action="#" class="join-right">
+      <label for="name">Full Name</label>
+      <input class="form-input" placeholder="Enter your Full Name" type="text" id="name" required />
+
+      <label>Gender</label>
+      <div class="join-radio">
+        <div>
+          <input type="radio" id="male" name="gender" value="male" checked />
+          <label for="male">Male</label></div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <div>
+          <input type="radio" id="others" name="gender" value="others" />
+          <label for="others">Others</label>
+        </div>
+      </div>
+
+      <label for="birthday">Date of Birth</label>
+      <input class="form-input dob" type="date" placeholder="Enter your Birthday" id="birthday" min="1918-01-01" max="2018-12-31" required />
+
+      <label for="email">Email Address</label>
+      <input class="form-input" placeholder="Enter your Email Address" type="email" id="email" required />
+
+      <label for="phone">Contact Number</label>
+      <input class="form-input" placeholder="Enter your Phone Number" type="tel" id="phone" required />
+
+      <div class="join-btn-gp">
+        <input class="btn-clear" type="reset" value="Clear" />
+        <input class="btn btn-reg" type="submit" value="REGISTER" />
+      </div>
+    </form>
+  </div>
+
+  <footer>
+    <a class="subscribe" href="#modal">Subscribe to Newsletter</a>
+    <h3>Stay Tuned!</h3>
+    <div class="footer-icons">
+      <img class="footer-icon" src="./assets/icons/facebook.png" alt="facebook" />
+      <img class="footer-icon" src="./assets/icons/instagram.png" alt="instagram" />
+      <img class="footer-icon" src="./assets/icons/twitter.png" alt="twitter" />
+      <img class="footer-icon" src="./assets/icons/discord.png" alt="discord" />
+    </div>
+  </footer>
+
+  <div class="search">
+    <div class="search-icon">
+      <img src="./assets/icons/search.png" alt="search" />
+    </div>
+    <div>
+      <input class="search-bar" placeholder="Type to search..." />
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-popup">
+      <div class="modal-title">
+        <h1>
+          <span class="text-secondary">Keep</span>
+          <span class="text-secondary">up to date</span>
+          <span>with all</span>
+          <span>the news</span>
+          <span>from us</span>
+        </h1>
+      </div>
+      <div class="modal-data">
+        <div class="modal-close">
+          <a href="#">
+            <img src="./assets/icons/close.svg" alt="close" />
+          </a>
+        </div>
+        <form class="modal-form" action="#">
+          <label for="first name">
+            First Name:<br />
+            <input class="form-input" placeholder="First Name" type="text" id="first name" required />
+          </label>
+          <label for="last name">
+            Last Name:<br />
+            <input class="form-input" placeholder="Last Name" type="text" id="last name" required />
+          </label>
+          <label for="email" class="span-2">
+            Email Address:<br />
+            <input class="form-input" placeholder="Email Address" type="email" id="email" required />
+          </label>
+          <input class="span-2 btn submit-btn" type="submit" value="sign me up" />
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
