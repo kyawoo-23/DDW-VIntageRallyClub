@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q & A</title>
+  <link rel="icon" href="./assets/img/logo.png">
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="./index.html">
+      <img class="nav-logo" src="./assets/img/logo.png" alt="logo" />
+    </a>
+    <div class="nav-items">
+      <a class="nav-item" href="./index.html">Home</a>
+      <a class="nav-item" href="./about.html">About</a>
+      <a class="nav-item" href="./drivers.html">Drivers</a>
+      <a class="nav-item" href="./register.html">Register</a>
+      <a class="nav-item nowrap active" href="./q&a.html">Q & A</a>
+      <a class="nav-item" href="./contact.html">Contact</a>
+    </div>
+  </nav>
+  <div class="hero">
+    <img src="./assets/img/q&a/hero.jpg" alt="hero img" />
+    <div class="overlay">
+      <div class="hero-title">
+        <h1>Q & A Forum</h1>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="center-title">Q & A</h1>
+
+  <div class="q-a">
+    <div class="box">
+      <div class="question">
+        <div class="profile">
+          <img class="profile-img" src="./assets/img/q&a/man-1.jpg" alt="profile" />
+          <p class="profile-name">John Nathan</p>
+        </div>
+        <div>
+          <h1 class="question-title">When is the last date to register?</h1>
+        </div>
+      </div>
+      <div>
+        <h3 class="answer">Last date to register will be on Dec 1.</h3>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="question">
+        <div class="profile">
+          <img class="profile-img" src="./assets/img/q&a/woman-1.jpg" alt="profile" />
+          <p class="profile-name">Susen Error</p>
+        </div>
+        <div>
+          <h1 class="question-title">Are vintage car model limited?</h1>
+        </div>
+      </div>
+      <div>
+        <h3 class="answer">No, there is no limitation on car model.</h3>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="question">
+        <div class="profile">
+          <img class="profile-img" src="./assets/img/q&a/man-2.jpg" alt="profile" />
+          <p class="profile-name">Ted Smith</p>
+        </div>
+        <div>
+          <h1 class="question-title">When is the next rally?</h1>
+        </div>
+      </div>
+      <div>
+        <h3 class="answer">We have not determined the date of next rally yet.</h3>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="question">
+        <div class="profile">
+          <img class="profile-img" src="./assets/img/q&a/woman-1.jpg" alt="profile" />
+          <p class="profile-name">Susen Error</p>
+        </div>
+        <div>
+          <h1 class="question-title">Are vintage car model limited?</h1>
+        </div>
+      </div>
+      <div>
+        <h3 class="answer">No, there is no limitation on car model.</h3>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="question">
+        <div class="profile">
+          <img class="profile-img" src="./assets/img/q&a/man-2.jpg" alt="profile" />
+          <p class="profile-name">Ted Smith</p>
+        </div>
+        <div>
+          <h1 class="question-title">When is the next rally?</h1>
+        </div>
+      </div>
+      <div>
+        <h3 class="answer">We have not determined the date of next rally yet.</h3>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="question">
+        <div class="profile">
+          <img class="profile-img" src="./assets/img/q&a/man-1.jpg" alt="profile" />
+          <p class="profile-name">John Nathan</p>
+        </div>
+        <div>
+          <h1 class="question-title">When is the last date to register?</h1>
+        </div>
+      </div>
+      <div>
+        <h3 class="answer">Last date to register will be on Dec 1.</h3>
+      </div>
+    </div>
+
+    <div class="pagination span-3">
+      <img class="p-link" src="./assets/icons/prev.svg" alt="prev" />
+      <a class="p-item active" href="#">1</a>
+      <a class="p-item" href="#">2</a>
+      <a class="p-item" href="#">3</a>
+      <img class="p-link" src="./assets/icons/forward.svg" alt="forward" />
+    </div>
+  </div>
+
+  <h1 class="center-title">Ask us a question</h1>
+
+  <div class="contact-form">
+    <div class="modal-title">
+      <h1>
+        <span class="text-secondary">Fill</span>
+        <span class="text-secondary">in the form</span>
+        <span>to</span>
+        <span>ask us</span>
+        <span>a question</span>
+      </h1>
+    </div>
+    <div class="contact-data">
+      <form class="modal-form" action="#">
+        <label for="first name">
+          First Name:<br />
+          <input class="form-input" placeholder="First Name" type="text" id="first name" required />
+        </label>
+        <label for="last name">
+          Last Name:<br />
+          <input class="form-input" placeholder="Last Name" type="text" id="last name" required />
+        </label>
+        <label for="email" class="span-2">
+          Email Address:<br />
+          <input class="form-input" placeholder="Email Address" type="email" id="email" required />
+        </label>
+        <label for="question" class="span-2">
+          Question:<br />
+          <textarea class="form-input textarea" placeholder="Your Question here" id="question" rows="4" required ></textarea>
+        </label>
+        <input class="span-2 btn submit-btn send-msg" type="submit" value="Ask question" />
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <a class="subscribe" href="#modal">Subscribe to Newsletter</a>
+    <h3>Stay Tuned!</h3>
+    <div class="footer-icons">
+      <img class="footer-icon" src="./assets/icons/facebook.png" alt="facebook" />
+      <img class="footer-icon" src="./assets/icons/instagram.png" alt="instagram" />
+      <img class="footer-icon" src="./assets/icons/twitter.png" alt="twitter" />
+      <img class="footer-icon" src="./assets/icons/discord.png" alt="discord" />
+    </div>
+  </footer>
+
+  <div class="search">
+    <div class="search-icon">
+      <img src="./assets/icons/search.png" alt="search" />
+    </div>
+    <div>
+      <input class="search-bar" placeholder="Type to search..." />
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-popup">
+      <div class="modal-title">
+        <h1>
+          <span class="text-secondary">Keep</span>
+          <span class="text-secondary">up to date</span>
+          <span>with all</span>
+          <span>the news</span>
+          <span>from us</span>
+        </h1>
+      </div>
+      <div class="modal-data">
+        <div class="modal-close">
+          <a href="#">
+            <img src="./assets/icons/close.svg" alt="close" />
+          </a>
+        </div>
+        <form class="modal-form" action="#">
+          <label for="first name">
+            First Name:<br />
+            <input class="form-input" placeholder="First Name" type="text" id="first name" required />
+          </label>
+          <label for="last name">
+            Last Name:<br />
+            <input class="form-input" placeholder="Last Name" type="text" id="last name" required />
+          </label>
+          <label for="email" class="span-2">
+            Email Address:<br />
+            <input class="form-input" placeholder="Email Address" type="email" id="email" required />
+          </label>
+          <input class="span-2 btn submit-btn" type="submit" value="sign me up" />
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
