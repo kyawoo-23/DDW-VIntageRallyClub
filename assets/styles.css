@@ -617,16 +617,41 @@ footer h3 {
   font-size: 1rem;
 }
 
+.contact-form {
+  width: 90%;
+  height: auto;
+  margin: 100px auto;
+  background-color: #0f0f0f;
+  box-shadow: 0 0 5em 20px rgb(198 210 239 / 30%), 0 0 5px 1px #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  color: #f2f2f2;
+}
+
+.contact-data {
+  padding: 45px 45px 45px 20px;
+}
+
+.form-input.textarea {
+  height: auto;
+  resize: none;
+}
+
+.submit-btn.send-msg {
+  padding: 15px 0;
+}
+
 @media only screen and (max-width: 1024px) {
   /* For tablets: */
-  .modal-popup {
+  .modal-popup, .contact-form {
     grid-template-columns: 1fr;
   }
   .modal-title {
     padding: 30px 20px;
     text-align: center;
   }
-  .modal-data {
+  .modal-data, .contact-data {
     padding: 30px 15px;
   }
   .card-title.cars {
