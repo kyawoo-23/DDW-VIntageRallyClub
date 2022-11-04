@@ -578,6 +578,7 @@ footer h3 {
 
 .form-input.dob {
   padding-right: 20px;
+  color-scheme: dark;
 }
 .form-input.dob:invalid::-webkit-datetime-edit {
   color: #8a8a8a;
@@ -636,6 +637,21 @@ footer h3 {
 
 .submit-btn.send-msg {
   padding: 15px 0;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .q-a {
