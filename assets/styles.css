@@ -757,6 +757,7 @@ footer h3 {
   display: grid;
   gap: 10px;
   grid-template-columns: 1fr;
+  overflow-x: hidden;
 }
 
 .dotted {
