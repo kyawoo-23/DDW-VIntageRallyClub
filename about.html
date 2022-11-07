@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="icon" href="./assets/img/logo.png">
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css">
+</head>
+<body>
+  <nav>
+    <a href="./index.html">
+      <img class="nav-logo" src="./assets/img/logo.png" alt="logo" />
+    </a>
+    <div class="nav-items">
+      <a class="nav-item" href="./index.html">Home</a>
+      <a class="nav-item active" href="./about.html">About</a>
+      <a class="nav-item" href="./drivers.html">Drivers</a>
+      <a class="nav-item" href="./register.html">Register</a>
+      <a class="nav-item nowrap" href="./q&a.html">Q & A</a>
+      <a class="nav-item" href="./contact.html">Contact</a>
+    </div>
+  </nav>
+  <div class="hero">
+    <img src="./assets/img/about/hero.jpg" alt="hero img" />
+    <div class="overlay">
+      <div class="hero-title">
+        <h1>About Us</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="race-bg">
+    <div class="car-container-1">
+      <img class="race-car" src="./assets/img/about/pixel car 1.png" alt="race car 1" id="car1" />
+    </div>
+    <div class="dotted"></div>
+    <div class="car-container-2">
+      <img class="race-car" src="./assets/img/about/pixel car 2.png" alt="race car 2" id="car2" />
+    </div>
+  </div>
+
+  <div class="card">
+    <div>
+      <h2 class="card-title">Rallies for Vintage Cars</h2>
+      <p class="card-info">
+        In Spring, we started the rally year in style, with a members-only Golden Dash Cup.
+      </p>
+      <p class="card-info">
+        <i>Next Rally starting in coming fall.</i>
+      </p>
+      <form action="./register.html">
+        <input class="btn register-btn" type="submit" value="Register now" />
+      </form>
+    </div>
+    <div>
+      <img class="card-img" src="./assets/img/about/card 1.jpg" alt="card 1" />
+    </div>
+  </div>
+
+  <div class="card">
+    <div>
+      <img class="card-img" src="./assets/img/about/card 2.jpg" alt="card 2" />
+    </div>
+    <div>
+      <h2 class="card-title">About our Drivers</h2>
+      <p class="card-info">
+        It's the participants themselves who make the championship special.
+      </p>
+      <form action="./drivers.html">
+        <input class="btn register-btn" type="submit" value="Our drivers" />
+      </form>
+    </div>
+  </div>
+
+  <div class="card">
+    <div>
+      <h2 class="card-title">Where to Question?</h2>
+      <p class="card-info">
+        For all enquiries, please reach to us by clicking on the button below.
+      </p>
+      <form action="./q&a.html">
+        <input class="btn register-btn" type="submit" value="Q & A" />
+      </form>
+    </div>
+    <div>
+      <img class="card-img" src="./assets/img/about/card 3.jpg" alt="card 3" />
+    </div>
+  </div>
+
+  <footer>
+    <a class="subscribe" href="#modal">Subscribe to Newsletter</a>
+    <h3>Stay Tuned!</h3>
+    <div class="footer-icons">
+      <img class="footer-icon" src="./assets/icons/facebook.png" alt="facebook" />
+      <img class="footer-icon" src="./assets/icons/instagram.png" alt="instagram" />
+      <img class="footer-icon" src="./assets/icons/twitter.png" alt="twitter" />
+      <img class="footer-icon" src="./assets/icons/discord.png" alt="discord" />
+    </div>
+  </footer>
+
+  <div class="search">
+    <div class="search-icon">
+      <img src="./assets/icons/search.png" alt="search" />
+    </div>
+    <div>
+      <input class="search-bar" placeholder="Type to search..." />
+    </div>
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="modal-popup">
+      <div class="modal-title">
+        <h1>
+          <span class="text-secondary">Keep</span>
+          <span class="text-secondary">up to date</span>
+          <span>with all</span>
+          <span>the news</span>
+          <span>from us</span>
+        </h1>
+      </div>
+      <div class="modal-data">
+        <div class="modal-close">
+          <a href="#">
+            <img src="./assets/icons/close.svg" alt="close" />
+          </a>
+        </div>
+        <form class="modal-form" action="#">
+          <label for="first name">
+            First Name:<br />
+            <input class="form-input" placeholder="First Name" type="text" id="first name" required />
+          </label>
+          <label for="last name">
+            Last Name:<br />
+            <input class="form-input" placeholder="Last Name" type="text" id="last name" required />
+          </label>
+          <label for="email" class="span-2">
+            Email Address:<br />
+            <input class="form-input" placeholder="Email Address" type="email" id="email" required />
+          </label>
+          <input class="span-2 btn submit-btn" type="submit" value="sign me up" />
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
