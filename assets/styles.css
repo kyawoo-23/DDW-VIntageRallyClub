@@ -373,6 +373,10 @@ footer h3 {
   margin: 30px 0;
 }
 
+.card-btn {
+  display: block;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -751,6 +755,10 @@ footer h3 {
   color: var(--primary);
 }
 
+.sm-order-1 {
+  order: unset;
+}
+
 .race-bg {
   margin: 50px 0;
   width: 100vw;
@@ -807,6 +815,97 @@ footer h3 {
   }
 }
 
+.youtubeVid {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.drivers {
+  width: 75%;
+  margin: 130px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 80px;
+}
+
+.driver-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #f8f8f8;
+  font-size: 1.3rem;
+}
+
+.driver-img {
+  display: block;
+  width: 100%;
+  height: 360px;
+}
+
+.driver-img img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.driver-details {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  width: 100%;
+  height: 360px;
+  padding: 20px;
+}
+
+.driver-details.first {
+  background-color: #990000;
+}
+.driver-details.second {
+  background-color: #557153;
+}
+.driver-details.third {
+  background-color: #7743DB;
+}
+.driver-details.fourth {
+  background-color: #0E5E6F;
+}
+.driver-details.fifth {
+  background-color: #42032C;
+}
+.driver-details.sixth {
+  background-color: #E97777;
+}
+
+.driver-social {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.driver-social img {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  filter: invert(98%) sepia(0%) saturate(4265%) hue-rotate(227deg) brightness(114%) contrast(73%);
+}
+
+.driver-social img:hover {
+  filter: invert(67%) sepia(91%) saturate(4632%) hue-rotate(12deg) brightness(103%) contrast(110%);
+}
+
+.driver-card:hover .driver-img{
+  display: none;
+}
+.driver-card:hover .driver-details {
+  display: flex;
+  transform: translateY(-30px);
+}
+
 @media only screen and (max-width: 1024px) {
   /* For tablets: */
   .modal-popup, .contact-form {
@@ -836,6 +935,12 @@ footer h3 {
   }
   .span-3 {
     grid-column: span 2;
+  }
+  .drivers {
+    width: 90%;
+  }
+  .driver-details {
+    font-size: 1.4rem;
   }
 }
 
@@ -906,7 +1011,14 @@ footer h3 {
   }
   .snap {
     max-height: 240px;
-    order: 2;
+  }
+  .sm-order-1 {
+    order: -1;
+  }
+  .card-btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
   }
   .search {
     height: 50px;
@@ -972,5 +1084,18 @@ footer h3 {
     --car1: 4s;
     --car2: 5s;
     --carWidth: 120px;
+  }
+  .drivers {
+    grid-template-columns: 1fr;
+  }
+  .driver-img {
+    height: 280px;
+  }
+  .driver-img img {
+    height: 280px;
+  }
+  .driver-details {
+    text-align: center;
+    height: 280px;
   }
 }
