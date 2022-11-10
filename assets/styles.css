@@ -956,6 +956,9 @@ footer h3 {
 
 @media only screen and (max-width: 1024px) {
   /* For tablets: */
+  .slideshow {
+    width: 90%;
+  }
   .modal-popup, .contact-form {
     grid-template-columns: 1fr;
   }
@@ -1064,9 +1067,13 @@ footer h3 {
     order: -1;
   }
   .slideshow-container {
+    height: 120vh;
     grid-template-columns: 1fr;
     column-gap: 0;
     row-gap: 60px;
+  }
+  .slideshow {
+    width: 100%;
   }
   .card-btn {
     margin-top: 10px;
