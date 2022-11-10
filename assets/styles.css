@@ -531,6 +531,9 @@ footer h3 {
 }
 
 .center-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 90%;
   margin: 80px auto;
   text-align: center;
