@@ -169,6 +169,7 @@ footer {
   width: 90%;
   height: 75vh;
   margin: 60px auto; 
+  padding-bottom: 50px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1067,7 +1068,6 @@ footer h3 {
     order: -1;
   }
   .slideshow-container {
-    height: 120vh;
     grid-template-columns: 1fr;
     column-gap: 0;
     row-gap: 60px;
