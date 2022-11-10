@@ -165,6 +165,54 @@ footer {
   transform: translateY(2px);
 }
 
+.slideshow-container {
+  width: 90%;
+  height: 75vh;
+  margin: 60px auto; 
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  column-gap: 30px;
+}
+
+.slideshow {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.slideshow.down img {
+  animation: 15s ease infinite DownSlideShow;
+}
+.slideshow.up img {
+  animation: 15s ease infinite UpSlideShow;
+}
+
+@keyframes DownSlideShow {
+  0% { transform: translateY(0); }
+  25% { transform: translateY(-100%); }
+  50% { transform: translateY(-200%); }
+  75% { transform: translateY(-300%); }
+  100% { transform: translateY(-400%); }
+}
+
+@keyframes UpSlideShow {
+  0% { transform: translateY(-400%); }
+  25% { transform: translateY(-300%); }
+  50% { transform: translateY(-200%); }
+  75% { transform: translateY(-100%); }
+  100% { transform: translateY(0); }
+}
+
 footer h3 {
   color: #ddd;
   font-size: .8rem;
@@ -1014,6 +1062,11 @@ footer h3 {
   }
   .sm-order-1 {
     order: -1;
+  }
+  .slideshow-container {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 60px;
   }
   .card-btn {
     margin-top: 10px;
